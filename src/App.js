@@ -18,8 +18,8 @@ function App() {
         <div className="App">
          <NavBar />
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/project" element={<Project />} />
+            <Route path="/portfolio-website/" element={<Home />} />
+            <Route path="/portfolio-website/project" element={<Project />} />
           </Routes>
         </div>
       </Router>
