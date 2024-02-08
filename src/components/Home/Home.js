@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./Home.css";
 import RoleTyping from "./RoleTyping";
+import homePic from "../../Assets/home-image-2.jpeg";
 
 function Home() {
     return (
@@ -29,7 +30,7 @@ function Home() {
 
                         <Col md={5} style={{ paddingBottom: 20 }}>
                         <img
-                            src={'./home-image-2.jpeg'}
+                            src={homePic}
                             alt="home pic"
                             className="img-fluid"
                             style={{ paddingTop: 50, }}
