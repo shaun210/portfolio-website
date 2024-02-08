@@ -14,15 +14,7 @@ import {
 function App() {
   return (
     <div className="MainApp">
-      <Router>
-        <div className="App">
-         <NavBar />
-          <Routes>
-            <Route path="/portfolio-website/" element={<Home />} />
-            <Route path="/portfolio-website/project" element={<Project />} />
-          </Routes>
-        </div>
-      </Router>
+      <Home></Home>
     </div>
   );
 }
