@@ -1,8 +1,10 @@
 import React, { useContext, useEffect, useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import Image from "react-bootstrap/Image";
 // import { ThemeContext } from "../../Context/theme";
 
+import logo from "../../Assets/logo-transparent-png.png";
 import Container from "react-bootstrap/Container";
 
 import { Link } from "react-router-dom";
@@ -11,28 +13,16 @@ import "./navbar.css";
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
-//   const [{ themename, toggeltheme }] = useContext(ThemeContext);
 
-  function scrollHandler() {
-    if (window.scrollY >= 20) {
-      updateNavbar(true);
-    } else {
-      updateNavbar(false);
-    }
-  }
-//   useEffect(() => {
-//     const body = document.body;
-//     const toggle = document.querySelector(".toggle-inner");
-//     if (themename === "dark") {
-//       body.classList.add("dark-mode");
-//       toggle.classList.add("toggle-active");
-//     } else {
-//       body.classList.remove("dark-mode");
-//       toggle.classList.remove("toggle-active");
-//     }
-//   }, [themename]);
+  // function scrollHandler() {
+  //   if (window.scrollY >= 20) {
+  //     updateNavbar(true);
+  //   } else {
+  //     updateNavbar(false);
+  //   }
+  // }
 
-  window.addEventListener("scroll", scrollHandler);
+  // window.addEventListener("scroll", scrollHandler);
 
   return (
     <Navbar
@@ -41,8 +31,22 @@ function NavBar() {
       expand="md"
       className={navColour ? "sticky" : "navbar"}
     >
-      <Container>
-
+      <Container fluid className="p-0">
+        <Navbar.Brand style={{alignItems:'left'}}>
+          <Nav.Link
+                as={Link}
+                to="/portfolio-website/"
+                onClick={() => updateExpanded(false)}
+              >
+            <img
+              src={logo}
+              width="300"
+              height="auto"
+              className="d-inline-block align-top"
+              alt="React Bootstrap logo"
+            />
+          </Nav.Link>
+        </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {
@@ -84,14 +88,6 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
           </Nav>
-
-          {/* <Nav.Item>
-            <div className="theme-switch">
-              <div id="toggle" onClick={toggeltheme}>
-                <div className="toggle-inner" />
-              </div>
-            </div>
-          </Nav.Item> */}
         </Navbar.Collapse>
       </Container>
     </Navbar>

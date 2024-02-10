@@ -1,0 +1,40 @@
+.single-project-main {
+    width: 100%;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.single-project-submain {
+    width: 70%;
+}
+
+.single-project-title{
+    font-size: 42px;
+    font-weight: 700;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 52px;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+
+}
+
+.single-project-subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 32px;
+    margin-bottom: 3rem;
+    letter-spacing: -0.02em;
+}
+.single-project-paragraph {
+    margin-bottom: 2.14rem;
+    font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+    line-height:32px;
+    letter-spacing: -0.003em;
+    font-size: 20px;
+}

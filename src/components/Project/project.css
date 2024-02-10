@@ -1,0 +1,28 @@
+.project-card {
+    text-align: left; /* Align text to the left */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    transition: box-shadow 0.3s ease;
+  }
+
+
+
+  
+  .project-card:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Change box shadow on hover */
+  }
+  
+  .project-title {
+    font-size: 3.5rem;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+    margin-bottom: 3rem;
+  }
+  
+  .project-subtitle{
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+    margin-bottom: 3rem;
+  }
