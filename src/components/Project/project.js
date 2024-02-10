@@ -3,7 +3,6 @@ import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 import './project.css';
 import {projectPage} from '../../portfolio';
-import githubIcon from "./boostrapIcon/github.svg";
 const ProjectList = () => {
   return (
     <Container fluid className='project-main' style={{ padding: '5rem' }}>
@@ -31,7 +30,6 @@ const ProjectList = () => {
                             <Link to= {project.link}>
                                 <Button variant="primary">Learn more</Button>
                             </Link>
-                            <img src={githubIcon} className="image-button" />
                         </Card.Body>
                     </Card>
                 </Col>

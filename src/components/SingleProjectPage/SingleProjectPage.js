@@ -4,6 +4,7 @@ import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 
 import { SingleProjectData } from '../../portfolio';
 import './SingleProjectPage.css';
+import dummy from './javaProjectsPictures/AWSproject/intro-pic.png';
 const SingleProjectPage = () => {
     const { projectId } = useParams();
     const project = SingleProjectData.find((project) => project.id === projectId);
@@ -13,7 +14,6 @@ const SingleProjectPage = () => {
     }
     return ( 
         <div className="single-project-main">
-            <img src="intro_pic.png"/>
             <div className="single-project-submain">
                 {project.details.map((section, index) => (
                     <div key={index}>
@@ -34,7 +34,7 @@ const SingleProjectPage = () => {
         case 'paragraph':
           return <p className="single-project-paragraph">{section.content}</p>;
         case 'image':
-            return <img src='/intro_pic.png' alt={section.alt} />;
+            return <img className ="single-project-image "src={require(`${section.url}`)} alt={section.alt} />;
 
         default:
           return null;

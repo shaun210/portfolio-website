@@ -61,8 +61,17 @@
   .greeting-button{
     margin: 3rem;
     width: 100px;
-    outline: none;
+    border: none !important;
+    background-color: #d4cfc2 !important;
+    transition: background-color 0.3s ease, transform 0.3s ease !important;
+    color: black !important;
   }
+
+  .greeting-button:hover {
+    background-color: rgba(140, 118, 64, 0.8) !important;;
+    transform: translateY(-5px) !important;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1) !important;
+}
   .image-button {
     width: 20px; /* Adjust the width as needed */
     height: 20px; /* Adjust the height as needed */
@@ -132,37 +141,3 @@
       display: none !important;
     }
   }
-
-  .wavy-line {
-  width: 100%; /* Adjust width as needed */
-  height: 20px; /* Adjust height as needed */
-  background: transparent;
-  position: relative;
-}
-
-.wavy-line::before,
-.wavy-line::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 5px; /* Adjust thickness of the wave */
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.5) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
-}
-
-.wavy-line::before {
-  top: 0;
-  left: 0;
-  transform: rotate(2deg); /* Adjust wave effect */
-}
-
-.wavy-line::after {
-  bottom: 0;
-  left: 0;
-  transform: rotate(-3deg); /* Adjust wave effect */
-}
-

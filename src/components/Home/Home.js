@@ -11,10 +11,10 @@ import DisplayLottie from "../Utils/DisplayLottie";
 function Home() {
     return (
         <section>
-            <Container fluid className="home-content " style={{backgroundColor:'RGB(114,104,84)'}}>
+            <Container fluid className="home-content " style={{backgroundColor:'RGB(114,104,84)', height:'100vh'}}>
                 <Row xs={12} style={{width:'100%'}}>
                     <Col md={8} className="home-header">
-                        <div>
+         
                             <p style={{marginBottom:'3rem'}} className="heading">
                                 <strong>
                                 Hi there!{" "}
@@ -37,21 +37,25 @@ function Home() {
                                 </p>
                             </div>
 
-                            <div>
-                                <Button className="greeting-button" style={{backgroundColor:'#d4cfc2'}}>
+                            <div className="d-flex align-items-center">
+                                <Button className="greeting-button" >
                                     <Image src={githubIcon} className="image-button" />
                                 </Button>
-                                <Button className="greeting-button" style={{backgroundColor:'#d4cfc2'}}>
+                                <Button className="greeting-button" >
                                     <Image src={linkedinIcon} className="image-button" />
                                 </Button>
-                                <Button className="greeting-button" style={{backgroundColor:'#d4cfc2'}}>
+                                <Button className="greeting-button" >
                                     <Image src={mailIcon} className="image-button" />
                                 </Button>
-                            </div>
+                                <Button className="greeting-button" >
+                                    <strong>Resume</strong>
+                                </Button>
+                                <DisplayLottie animationData={codingPerson} width={300} height={300} />
                         </div>
+                   
                     </Col>
 
-                    <Col style={{ paddingBottom: 20, marginLeft:'200px' }}>
+                    <Col style={{ marginLeft:'200px' }}>
                         <img
                             src={homePic}
                             alt="home pic"
@@ -62,11 +66,11 @@ function Home() {
                 </Row>
 
 
-                <Row className="justify-content-center" style={{ paddingBottom: 20, marginLeft:'40vw' }}>
+                {/* <Row className="justify-content-center" style={{ paddingBottom: 20, marginLeft:'40vw' }}>
                     <Col xs={12} md={12}>
                     <DisplayLottie animationData={codingPerson} width={500} height={500} />
                     </Col>
-                </Row>
+                </Row> */}
             </Container>
         </section>
     );

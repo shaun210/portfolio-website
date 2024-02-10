@@ -10,7 +10,7 @@
 }
 
 .single-project-submain {
-    width: 70%;
+    width: 60%;
 }
 
 .single-project-title{
@@ -25,10 +25,10 @@
 
 .single-project-subtitle {
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 600;
     font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 32px;
-    margin-bottom: 3rem;
+    line-height: 30px;
+    margin-bottom: 32px;
     letter-spacing: -0.02em;
 }
 .single-project-paragraph {
@@ -37,4 +37,10 @@
     line-height:32px;
     letter-spacing: -0.003em;
     font-size: 20px;
+}
+
+.single-project-image{
+    width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
