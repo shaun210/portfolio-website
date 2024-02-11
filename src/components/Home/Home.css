@@ -1,3 +1,10 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: RGB(114, 104, 84);
+  height: 100%;
+}
+
 .wave {
     animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
     animation-duration: 2.1s; /* Change to speed up or slow down */

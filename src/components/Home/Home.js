@@ -11,7 +11,7 @@ import DisplayLottie from "../Utils/DisplayLottie";
 function Home() {
     return (
         <section>
-            <Container fluid className="home-content " style={{backgroundColor:'RGB(114,104,84)', height:'100vh'}}>
+            <Container fluid className="home-content " style={{backgroundColor:'RGB(114,104,84)'}}>
                 <Row xs={12} style={{width:'100%'}}>
                     <Col md={8} className="home-header">
          
