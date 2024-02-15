@@ -2,8 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Image from "react-bootstrap/Image";
-// import { ThemeContext } from "../../Context/theme";
-
+import { Paths } from "../../portfolio";
 import logo from "../../Assets/logo-transparent-png.png";
 import Container from "react-bootstrap/Container";
 
@@ -14,15 +13,15 @@ function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
-  // function scrollHandler() {
-  //   if (window.scrollY >= 20) {
-  //     updateNavbar(true);
-  //   } else {
-  //     updateNavbar(false);
-  //   }
-  // }
+  function scrollHandler() {
+    if (window.scrollY >= 20) {
+      updateNavbar(true);
+    } else {
+      updateNavbar(false);
+    }
+  }
 
-  // window.addEventListener("scroll", scrollHandler);
+  window.addEventListener("scroll", scrollHandler);
 
   return (
     <Navbar
@@ -35,7 +34,7 @@ function NavBar() {
         <Navbar.Brand style={{alignItems:'left'}}>
           <Nav.Link
                 as={Link}
-                to="/portfolio-website/"
+                to={Paths.home}
                 onClick={() => updateExpanded(false)}
               >
             <img
@@ -63,7 +62,7 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/portfolio-website/" onClick={() => updateExpanded(false)}>
+              <Nav.Link as={Link} to={Paths.home} onClick={() => updateExpanded(false)}>
                 Home
               </Nav.Link>
             </Nav.Item>
@@ -71,17 +70,26 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/portfolio-website/about"
+                to={Paths.workExperience}
                 onClick={() => updateExpanded(false)}
               >
-                About
+                work experience
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to={Paths.skills}
+                onClick={() => updateExpanded(false)}
+              >
+                education & skills
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/portfolio-website/project"
+                to={Paths.projectPage}
                 onClick={() => updateExpanded(false)}
               >
                 Projects

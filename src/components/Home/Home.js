@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Button, Image } from "react-bootstrap";
 import "./Home.css";
-import RoleTyping from "./RoleTyping";
 import homePic from "../../Assets/home-image-2.jpeg";
 import githubIcon from "./boostrapIcon/github.svg";
 import linkedinIcon from "./boostrapIcon/linkedin.svg";
@@ -11,7 +10,7 @@ import DisplayLottie from "../Utils/DisplayLottie";
 function Home() {
     return (
         <section>
-            <Container fluid className="home-content " style={{backgroundColor:'RGB(114,104,84)'}}>
+            <Container fluid className="home-content " style={{backgroundColor:'RGB(114,104,84)', height:'100vh'}}>
                 <Row xs={12} style={{width:'100%'}}>
                     <Col md={8} className="home-header">
          

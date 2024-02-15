@@ -12,9 +12,23 @@ const ProjectList = () => {
         
         <Row>   
         <h3 className="project-subtitle">Java projects</h3>
+        <hr />
         </Row>
+        {renderSection(projectPage.javaProjects)}
+
+        <Row>   
+        <h3 className="project-subtitle">Python project</h3>
+        <hr />
+        </Row>
+        {renderSection(projectPage.pythonProjects)}
+    </Container>
+  );
+};
+
+const renderSection = (projectPage) => {
+    return (
         <Row xs={1} sm={2} md={3} className="g-4">
-            {projectPage.javaProjects.map((project, index) => (
+            {projectPage.map((project, index) => (
                 <Col key={index}>
                     <Card className="project-card" style={{ height: '15rem' }}>
                         <Card.Body className="d-flex flex-column justify-content-between">
@@ -35,8 +49,7 @@ const ProjectList = () => {
                 </Col>
             ))}
         </Row>
-    </Container>
-  );
-};
+    )
+}
 
 export default ProjectList;

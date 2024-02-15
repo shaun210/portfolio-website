@@ -34,8 +34,20 @@ const SingleProjectPage = () => {
         case 'paragraph':
           return <p className="single-project-paragraph">{section.content}</p>;
         case 'image':
-            return <img className ="single-project-image "src={require(`${section.url}`)} alt={section.alt} />;
-
+          return <img className ="single-project-image "src={require(`${section.url}`)} alt={section.alt} />;
+          case 'technologies':
+            return (
+              <div>
+                <div className="row row-cols-auto" style={{marginBottom:'3rem'}}>
+                  {section.content.map((technology, index) => (
+                    <div className="col" key={index}>
+                      <div className="technology-box">{technology}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            );
+          
         default:
           return null;
       }

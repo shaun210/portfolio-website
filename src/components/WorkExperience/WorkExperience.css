@@ -1,0 +1,9 @@
+.technology-box {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px 16px; /* Adjust padding as needed */
+    margin-right: 10px; /* Adjust margin as needed */
+
+    display: inline-block;
+  }
