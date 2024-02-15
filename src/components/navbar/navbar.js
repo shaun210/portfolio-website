@@ -5,9 +5,10 @@ import Image from "react-bootstrap/Image";
 import { Paths } from "../../portfolio";
 import logo from "../../Assets/logo-transparent-png.png";
 import Container from "react-bootstrap/Container";
+import Dropdown from 'react-bootstrap/Dropdown';
+import './navbar.css';
 
 import { Link } from "react-router-dom";
-import "./navbar.css";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -31,12 +32,12 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container fluid className="p-0">
-        <Navbar.Brand style={{alignItems:'left'}}>
+        <Navbar.Brand>
           <Nav.Link
-                as={Link}
-                to={Paths.home}
-                onClick={() => updateExpanded(false)}
-              >
+            as={Link}
+            to={Paths.home}
+            onClick={() => updateExpanded(false)}
+          >
             <img
               src={logo}
               width="300"
@@ -97,6 +98,19 @@ function NavBar() {
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
+
+        {/* Dropdown Menu */}
+        <Dropdown className="d-md-none">
+          <Dropdown.Toggle variant="secondary" id="dropdown-basic">
+            Menu
+          </Dropdown.Toggle>
+          <Dropdown.Menu>
+            <Dropdown.Item as={Link} to={Paths.home}>Home</Dropdown.Item>
+            <Dropdown.Item as={Link} to={Paths.workExperience}>Work Experience</Dropdown.Item>
+            <Dropdown.Item as={Link} to={Paths.skills}>Education & Skills</Dropdown.Item>
+            <Dropdown.Item as={Link} to={Paths.projectPage}>Projects</Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
       </Container>
     </Navbar>
   );

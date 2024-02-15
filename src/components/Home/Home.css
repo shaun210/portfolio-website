@@ -1,4 +1,8 @@
-
+body {
+  background-color: RGB(114, 104, 84);
+  margin: 0;
+  padding: 0;
+}
 
 .wave {
     animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
@@ -43,15 +47,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5rem 2rem !important;
+ 
     text-align: left;
-
   }
   
   .heading {
     font-size: 60px !important;
     padding-left: 50px !important;
-    color: #ffffff;
+    color: #000000;
   }
   
   .heading-name {
@@ -85,7 +88,7 @@
   .greating-text {
     font-size: 1.4em !important;
     padding-left: 50px !important;
-    color: #ffffff;
+    color: #000000;
   }
   
   .Typewriter__wrapper {
