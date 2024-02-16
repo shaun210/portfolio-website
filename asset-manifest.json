@@ -1,13 +1,20 @@
 {
   "files": {
     "main.css": "/portfolio-website/static/css/main.cf7f385d.css",
-    "main.js": "/portfolio-website/static/js/main.d8155362.js",
-    "static/js/592.e7dcf586.chunk.js": "/portfolio-website/static/js/592.e7dcf586.chunk.js",
+    "main.js": "/portfolio-website/static/js/main.e73de7da.js",
+    "static/js/592.6bb92794.chunk.js": "/portfolio-website/static/js/592.6bb92794.chunk.js",
     "static/media/classDiagram.png": "/portfolio-website/static/media/classDiagram.7d1fcd2c1c64e051a37c.png",
     "static/media/overview.png": "/portfolio-website/static/media/overview.410f1f2c3d8014ec9c15.png",
     "static/media/intro-pic.png": "/portfolio-website/static/media/intro-pic.902c2a306291631d55a3.png",
+    "static/media/testcoverage.png": "/portfolio-website/static/media/testcoverage.ec1f5aec943f3a0751b5.png",
+    "static/media/reservations.png": "/portfolio-website/static/media/reservations.c84f811d751cc70eac1c.png",
     "static/media/logo-transparent-png.png": "/portfolio-website/static/media/logo-transparent-png.9abeb619bff3deebede4.png",
+    "static/media/dashboard1.png": "/portfolio-website/static/media/dashboard1.206911a738d1ed3f3122.png",
+    "static/media/service.png": "/portfolio-website/static/media/service.e016aa3e5c90e36315da.png",
+    "static/media/Employee.png": "/portfolio-website/static/media/Employee.63c45f23ae5aa451c33a.png",
+    "static/media/architecture.png": "/portfolio-website/static/media/architecture.e6abc388b1ba994858ce.png",
     "static/media/monitorScreen.jpeg": "/portfolio-website/static/media/monitorScreen.5a0b3f7f21067b914445.jpeg",
+    "static/media/login.png": "/portfolio-website/static/media/login.794c2a918e39125a82fe.png",
     "static/media/McGill University.svg": "/portfolio-website/static/media/McGill University.5b8cf5f740c4cae5c8003ac78cf26530.svg",
     "static/media/experience.svg": "/portfolio-website/static/media/experience.c50c576af78a4172f78dc03f701a9a51.svg",
     "static/media/home-image-2.jpeg": "/portfolio-website/static/media/home-image-2.121648d2f48eb103bdf8.jpeg",
@@ -16,11 +23,11 @@
     "index.html": "/portfolio-website/index.html",
     "static/media/envelope-fill.svg": "/portfolio-website/static/media/envelope-fill.0c0519dc43c0fc6eb708c48766d6a15b.svg",
     "main.cf7f385d.css.map": "/portfolio-website/static/css/main.cf7f385d.css.map",
-    "main.d8155362.js.map": "/portfolio-website/static/js/main.d8155362.js.map",
-    "592.e7dcf586.chunk.js.map": "/portfolio-website/static/js/592.e7dcf586.chunk.js.map"
+    "main.e73de7da.js.map": "/portfolio-website/static/js/main.e73de7da.js.map",
+    "592.6bb92794.chunk.js.map": "/portfolio-website/static/js/592.6bb92794.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cf7f385d.css",
-    "static/js/main.d8155362.js"
+    "static/js/main.e73de7da.js"
   ]
 }
